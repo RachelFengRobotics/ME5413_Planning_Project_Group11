@@ -1,12 +1,3 @@
-/** path_tracker_node.hpp
- *
- * Copyright (C) 2024 Shuo SUN & Advanced Robotics Center, National University of Singapore
- *
- * MIT License
- *
- * Declarations for PathTrackerNode class
- */
-
 #ifndef PATH_TRACKER_NODE_H_
 #define PATH_TRACKER_NODE_H_
 
@@ -53,8 +44,9 @@ class PathTrackerNode
 
   tf2::Transform convertPoseToTransform(const geometry_msgs::Pose& pose);
   double computeStanelyControl(const double heading_error, const double cross_track_error, const double velocity);
-  geometry_msgs::Twist computeControlOutputs(const nav_msgs::Odometry& odom_robot, const geometry_msgs::Pose& pose_goal);
-
+  double normalizeAngle(double angle);
+  geometry_msgs::Twist computeControlOutputs(const nav_msgs::Odometry& odom_robot, const nav_msgs::Path::ConstPtr& path);
+  geometry_msgs::Point findGoalPoint(const tf2::Vector3& point_robot, const nav_msgs::Path::ConstPtr& path, double LAD);
   // ROS declaration
   ros::NodeHandle nh_;
   ros::Timer timer_;

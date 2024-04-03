@@ -2,7 +2,7 @@
 
 NUS ME5413 Autonomous Mobile Robotics Planning Project
 
-> Authors: [Ziggy](https://github.com/ziggyhuang) and [Shuo](https://github.com/SS47816)
+> Authors: [Ziggy](https://github.com/ziggyhuang) and [Shuo](https://github.com/SS47816) and [Grooup-11-Zhong Zeren](https://github.com/HardyPavel)
 
 ![Ubuntu 20.04](https://img.shields.io/badge/OS-Ubuntu_20.04-informational?style=flat&logo=ubuntu&logoColor=white&color=2bbc8a)
 ![ROS Noetic](https://img.shields.io/badge/Tools-ROS_Noetic-informational?style=flat&logo=ROS&logoColor=white&color=2bbc8a)
